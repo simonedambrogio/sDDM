@@ -101,9 +101,9 @@ made (until the level of evidence reaches a choice threshold *θ*)
 <br>
 <div style="text-align: center;">
 
-L(t+Δt)=L(t)+[δ<sub>p</sub>+δ<sub>s</sub>]×Δt+√Δt×ϵ
+L(t + Δt) = L(t) + [δ<sub>p</sub> + δ<sub>s</sub>] × Δt + √Δt × ϵ
 
-$L(t+\\Delta t) = L(t) + \[\\delta\_p + \\delta\_s\] \\times \\Delta t + \\sqrt{\\Delta t} \\times \\epsilon$
+$L(t+\Delta t) = L(t) + [\delta_p + \delta_s] \times \Delta t + \sqrt{\Delta t} \times \epsilon$
 
 <br>
 
