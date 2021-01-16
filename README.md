@@ -1,11 +1,5 @@
 # sDDM
 
-<style type="text/css">
-body {
-text-align: justify;
-font-size: 16px;
-}
-</style>
 
 <br>
 
@@ -13,8 +7,7 @@ font-size: 16px;
 
 In this document I will be presenting a power analysis which contains
 Nine levels of the “Social Information” variable: {Control, 0 vs 7 - 1
-vs 6 - 2 vs 5 - 3 vs 4 - 4 vs 3 - 2 vs 5 - 1 vs 6 - 0 vs 7} rather than
-three {Control - Honest - Dishonest} considered in the previous version.
+vs 6 - 2 vs 5 - 3 vs 4 - 4 vs 3 - 2 vs 5 - 1 vs 6 - 0 vs 7}.
 
 Furthermore, I generated artificial data using the sDDM the aim of:
 first, trying to retrieve the parameters used to generate the data and
@@ -32,7 +25,7 @@ levels of the temptation variable {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5}
 and 9 the levels of the social information variable {-7, -5, -3, -1, 1,
 3, 5, 7}. Below a graphical representation of the experimental design.
 
-<img src="Power-Analysis_files/figure-markdown_github/Experimental-Design.png" style="display: block; margin: auto;" />
+<img src="Power-Analysis_files/figure-markdown_github/experimental-design.png" style="display: block; margin: auto;" />
 
 <br> <br> <br>
 
@@ -115,7 +108,7 @@ $L(t+\\Delta t) = L(t) + \[\\delta\_p + \\delta\_s\] \\times \\Delta t + \\sqrt{
 <div style="text-align: justify;">
 
 where *ϵ* is Gaussian white noise with a mean of 0 and a variance of 1.
-The parameters *δ*<sub>*p*</sub> and *d**e**l**t**a*<sub>*s*</sub>
+The parameters *δ*<sub>*p*</sub> and *δ*<sub>*s*</sub>
 correspond to the strength of the personal and social information
 uptake, respectively. The social drift *δ*<sub>*s*</sub> is computed as
 follow:
