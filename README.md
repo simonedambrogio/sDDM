@@ -32,7 +32,7 @@ levels of the temptation variable {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5}
 and 9 the levels of the social information variable {-7, -5, -3, -1, 1,
 3, 5, 7}. Below a graphical representation of the experimental design.
 
-![](Images/Experimental%20Design.png)
+<img src="Power-Analysis_files/figure-markdown_github/Experimental-Design.png" style="display: block; margin: auto;" />
 
 <br> <br> <br>
 
