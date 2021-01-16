@@ -25,7 +25,7 @@ levels of the temptation variable {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5}
 and 9 the levels of the social information variable {-7, -5, -3, -1, 1,
 3, 5, 7}. Below a graphical representation of the experimental design.
 
-<img src="Power-Analysis_files/figure-markdown_github/unnamed-chunk-1-0.png" style="display: block; margin: auto;" />
+<img src="Power-Analysis_files/figure-markdown_github/unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
 
 <br> <br> <br>
 
@@ -103,7 +103,6 @@ made (until the level of evidence reaches a choice threshold *θ*)
 
 L(t + Δt) = L(t) + [δ<sub>p</sub> + δ<sub>s</sub>] × Δt + √Δt × ϵ
 
-$L(t+\Delta t) = L(t) + [\delta_p + \delta_s] \times \Delta t + \sqrt{\Delta t} \times \epsilon$
 
 <br>
 
