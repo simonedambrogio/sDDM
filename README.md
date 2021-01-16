@@ -18,23 +18,17 @@ estimate the power of mixed effects logistic regression models.
 
 <font size="5"> **Experimental Design** </font>
 
-<br>
-
 The experimental design I have in mind is a 11 x 9, where 11 are the
 levels of the temptation variable {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5}
 and 9 the levels of the social information variable {-7, -5, -3, -1, 1,
 3, 5, 7}.
 
-<br> <br> <br>
+<br> 
 
 <font size="5"> **Starting point as a function of Temptation** </font>
 
-<br>
-
-<div style="text-align: justify;">
-A prediction that we can formulate is that higher levels of temptation lead to an higher self-serving choice rate. One of the main hypothesis of this work is that self-serving choices are explained by changes in the sDDM Starting Point. It is possible to define the relationship between temptation and starting point using a logistic function: B = logit( a × (Temptation - b) ), where *B* is the starting point, *a* is a free parameter that represents how sensitive the “Starting Point” is to changes in “Temptation” and *b* is a free parameter that represents how strong must the temptation be increase the self-serving choice rate. Note that: 1. A starting point of 0.5 represent a starting point equally distant between the two bounds. Consequently, the model predicts that a B lower (higher) than 0.5 leads to an higher (lower) rate of self-serving choices. 2. The parameter b has a crystalline and directly interpretable meaning: b = 0 indicates that as soon as the temptation is greater than 0 the participant starts choosing the self-serving alternative, b = 1 indicates that as soon as the temptation is greater than 1 the participant starts choosing the self-serving alternative, b = 1.5 indicates that as soon as the temptation is greater than 1.5 the participant starts choosing the self-serving alternative, and so on… The parameter *a* indicates how
+A prediction that we can formulate is that higher levels of temptation lead to an higher self-serving choice rate. One of the main hypothesis of this work is that self-serving choices are explained by changes in the sDDM Starting Point. It is possible to define the relationship between temptation and starting point using a logistic function: B = logit( a × (Temptation - b) ), where B is the starting point, a is a free parameter that represents how sensitive the “Starting Point” is to changes in “Temptation” and b is a free parameter that represents how strong must the temptation be increase the self-serving choice rate. Note that: 1. A starting point of 0.5 represent a starting point equally distant between the two bounds. Consequently, the model predicts that a B lower (higher) than 0.5 leads to an higher (lower) rate of self-serving choices. 2. The parameter b has a crystalline and directly interpretable meaning: b = 0 indicates that as soon as the temptation is greater than 0 the participant starts choosing the self-serving alternative, b = 1 indicates that as soon as the temptation is greater than 1 the participant starts choosing the self-serving alternative, b = 1.5 indicates that as soon as the temptation is greater than 1.5 the participant starts choosing the self-serving alternative, and so on… The parameter a indicates how
 strong the change in the self-serving choice rate will be. I think that representing the relationship between temptation and starting point with this logistic function is an very interesting tool to investigate individual differences regarding how much and when a person is willing to make dishonest choices.
-</div>
 
 
 ``` r
@@ -65,22 +59,15 @@ user::df_lapply( seq_along(B_slope), function(j){ user::df_lapply(seq_along(B_in
 
 <br>
 
-<font size="5"> **Generate Artificial Data using the social drift
-diffusion model** </font>
-
-<br>
+<font size="5"> **Generate Artificial Data using the social drift diffusion model** </font>
 
 According the the sDDM, At each time step *Δ**t*, the current state of
 evidence L(t) is updated by sampling new evidence until a decision is
 made (until the level of evidence reaches a choice threshold *θ*)
 
-<br>
 <div style="text-align: center;">
 
 L(t + Δt) = L(t) + [δ<sub>p</sub> + δ<sub>s</sub>] × Δt + √Δt × ϵ
-
-
-<br>
 
 <div style="text-align: justify;">
 
@@ -90,16 +77,13 @@ correspond to the strength of the personal and social information
 uptake, respectively. The social drift *δ*<sub>*s*</sub> is computed as
 follow:
 
-<br>
 <div style="text-align: center;">
 
 *M* = *N*<sub>*A*</sub> − *N*<sub>*B*</sub>
 
-<br>
 
 *δ*<sub>*s*</sub> = *s* × *M*<sup>*q*</sup>
 
-<br>
 
 <div style="text-align: justify;">
 
@@ -241,11 +225,9 @@ data_sim %>%
 
 <img src="Power-Analysis_files/figure-markdown_github/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
 
-<br>
+<br> <br> <br>
 
 <font size="5"> **Parameters Recovery** </font>
-
-<br>
 
 I recovered the parameters using a bayesian hierarchical approach.
 Specifically, I implemented a Differential-Evolution MCMC algorithm
@@ -292,8 +274,7 @@ apply(data_plot_avg[,1:6], 2, mean)
 
 <div style="text-align: center;">
 
-<font size="3"> **Posterior distributions of each group parameter**
-</font>
+<font size="3"> **Posterior distributions of each group parameter** </font>
 
 <div style="text-align: justify;">
 
@@ -395,11 +376,10 @@ ggarrange(post, cn, nrow = 1)
 
 <div style="text-align: justify;">
 
-<br>
+<br> <br> 
 
 <font size="5"> **Power Analysis** </font>
 
-<br>
 
 I performed a power analysis using the effects generated by this
 simulation. I would be happy to discuss the plausibility of these
