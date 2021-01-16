@@ -23,42 +23,18 @@ estimate the power of mixed effects logistic regression models.
 The experimental design I have in mind is a 11 x 9, where 11 are the
 levels of the temptation variable {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5}
 and 9 the levels of the social information variable {-7, -5, -3, -1, 1,
-3, 5, 7}. Below a graphical representation of the experimental design.
-
-<img src="Power-Analysis_files/figure-markdown_github/unnamed-chunk-1-1.png" style="display: block; margin: auto;" />
+3, 5, 7}.
 
 <br> <br> <br>
 
 <font size="5"> **Starting point as a function of Temptation** </font>
 
 <br>
+
 <div style="text-align: justify;">
-A prediction that we can formulate is that higher levels of temptation
-lead to an higher self-serving choice rate. One of the main hypothesis
-of this work is that self-serving choices are explained by changes in
-the sDDM Starting Point. It is possible to define the relationship
-between temptation and starting point using a logistic function:
-$B = \\frac{1}{1 + e^{a (Temptaion-b)}}$, where *B* is the starting
-point, *a* is a free parameter that represents how sensitive the
-“Starting Point” is to changes in “Temptation” and *b* is a free
-parameter that represents how strong must the temptation be increase the
-self-serving choice rate. Note that: 1. A starting point of 0.5
-represent a starting point equally distant between the two bounds.
-Consequently, the model predicts that a B lower (higher) than 0.5 leads
-to an higher (lower) rate of self-serving choices. 2. The parameter b
-has a crystalline and directly interpretable meaning: b = 0 indicates
-that as soon as the temptation is greater than 0 the participant starts
-choosing the self-serving alternative, b = 1 indicates that as soon as
-the temptation is greater than 1 the participant starts choosing the
-self-serving alternative, b = 1.5 indicates that as soon as the
-temptation is greater than 1.5 the participant starts choosing the
-self-serving alternative, and so on… The parameter *a* indicates how
-strong the change in the self-serving choice rate will be. I think that
-representing the relationship between temptation and starting point with
-this logistic function is an very interesting tool to investigate
-individual differences regarding how much and when a person is willing
-to make dishonest choices.
-<div/>
+A prediction that we can formulate is that higher levels of temptation lead to an higher self-serving choice rate. One of the main hypothesis of this work is that self-serving choices are explained by changes in the sDDM Starting Point. It is possible to define the relationship between temptation and starting point using a logistic function: $B = \\frac{1}{1 + e^{a (Temptaion-b)}}$, where *B* is the starting point, *a* is a free parameter that represents how sensitive the “Starting Point” is to changes in “Temptation” and *b* is a free parameter that represents how strong must the temptation be increase the self-serving choice rate. Note that: 1. A starting point of 0.5 represent a starting point equally distant between the two bounds. Consequently, the model predicts that a B lower (higher) than 0.5 leads to an higher (lower) rate of self-serving choices. 2. The parameter b has a crystalline and directly interpretable meaning: b = 0 indicates that as soon as the temptation is greater than 0 the participant starts choosing the self-serving alternative, b = 1 indicates that as soon as the temptation is greater than 1 the participant starts choosing the self-serving alternative, b = 1.5 indicates that as soon as the temptation is greater than 1.5 the participant starts choosing the self-serving alternative, and so on… The parameter *a* indicates how
+strong the change in the self-serving choice rate will be. I think that representing the relationship between temptation and starting point with this logistic function is an very interesting tool to investigate individual differences regarding how much and when a person is willing to make dishonest choices.
+</div>
 
 
 ``` r
